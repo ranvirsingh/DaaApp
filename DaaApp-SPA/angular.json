@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "DaaApp-SPA": {
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "DaaApp-SPA"
+    }
+  },
+  "defaultProject": "DaaApp-SPA",
+  "cli": {
+    "analytics": "955bf399-cdff-4f2c-9de7-f4c0cce5c82f"
+  }
 }
