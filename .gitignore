@@ -3,3 +3,5 @@
 **/bin/**
 **/obj/**
 **/lcov.info
+DaaApp.API.Tests/coveragereport/*
+DaaApp.API/.vs/*

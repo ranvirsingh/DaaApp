@@ -37,6 +37,34 @@
                 "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "test",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "test",
+                "DaaApp.API.Tests",
+                "/p:CollectCoverage=true",
+                "/p:CoverletOutputFormat=cobertura"
+            ],
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "coverage",
+            "command": "reportgenerator",
+            "type": "process",
+            "dependsOn": ["test"],
+            "args": [
+                "-reports:DaaApp.API.Tests\\coverage.cobertura.xml",
+                "-targetdir:DaaApp.API.Tests\\coveragereport",
+                "-reporttypes:Html"
+            ],
+            "problemMatcher": [
+                "$msCompile"
+            ]
         }
     ]
 }

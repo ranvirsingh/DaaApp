@@ -9,6 +9,8 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0"/>
     <PackageReference Include="coverlet.collector" Version="1.0.1"/>
     <PackageReference Include="coverlet.msbuild" Version="2.8.0"/>
+    <PackageReference Include="ReportGenerator" Version="4.5.0"/>
+    <PackageReference Include="Moq" Version="4.13.1"/>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DaaApp.API\DaaApp.API.csproj"/>
