@@ -1,7 +1,9 @@
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Http;
 
 namespace DaaApp.API.Helpers
 {
+    [ExcludeFromCodeCoverage]
     public static class Extensions
     {
         public static void AddApplicationError(this HttpResponse response, string message)

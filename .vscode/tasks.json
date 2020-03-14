@@ -46,6 +46,7 @@
                 "test",
                 "DaaApp.API.Tests",
                 "/p:CollectCoverage=true",
+                "/p:Exclude=\"[*]DaaApp.API.Migrations.*,[*]DaaApp.API.Startup,[*]DaaApp.API.Program\"",
                 "/p:CoverletOutputFormat=cobertura"
             ],
             "problemMatcher": [
@@ -54,7 +55,7 @@
         },
         {
             "label": "coverage",
-            "command": "reportgenerator",
+            "command": "DaaApp.API.Tests\\tools\\reportgenerator.exe",
             "type": "process",
             "dependsOn": ["test"],
             "args": [

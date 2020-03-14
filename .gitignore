@@ -5,3 +5,4 @@
 **/lcov.info
 DaaApp.API.Tests/coveragereport/*
 DaaApp.API/.vs/*
+DaaApp.API.Tests/tools/**
